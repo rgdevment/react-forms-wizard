@@ -1,0 +1,118 @@
+ol.navbarProgress {
+    margin: 0;
+    padding-bottom: 2.2rem;
+    list-style-type: none;
+}
+
+ol.navbarProgress li {
+    display: inline-block;
+    text-align: center;
+    line-height: 4.5rem;
+    padding: 0 0.7rem;
+    cursor: pointer;
+}
+
+ol.navbarProgress li span {
+    padding: 0 1.5rem;
+}
+
+@media (max-width: 650px) {
+    .navbarProgress li span {
+        display: none;
+    }
+}
+
+.navbarProgress em {
+    display: none;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+@media (max-width: 650px) {
+    .navbarProgress em {
+        display: inline;
+    }
+}
+
+ol.navbarProgress li.navbarProgress-todo {
+    color: silver;
+    border-bottom: 4px solid silver;
+}
+
+ol.navbarProgress li.navbarProgress-doing {
+    color: black;
+    border-bottom: 4px solid #33C3F0;
+}
+
+ol.navbarProgress li.navbarProgress-done {
+    color: black;
+    border-bottom: 4px solid #33C3F0;
+}
+
+ol.navbarProgress li.navbarProgress-error {
+    color: black;
+    border-bottom: 4px solid #33C3F0;
+}
+
+ol.navbarProgress li:after {
+    content: "\00a0\00a0";
+}
+
+ol.navbarProgress li:before {
+    position: relative;
+    bottom: -3.7rem;
+    float: left;
+    left: 50%;
+}
+
+ol.navbarProgress li.navbarProgress-todo:before {
+    content: "\039F";
+    color: silver;
+    background-color: white;
+    width: 1.2em;
+    line-height: 1.4em;
+}
+
+ol.navbarProgress li.navbarProgress-todo:hover:before {
+    color: #0FA0CE;
+}
+
+ol.navbarProgress li.navbarProgress-doing:before {
+    content: "\2022";
+    color: white;
+    background-color: #33C3F0;
+    width: 1.2em;
+    line-height: 1.2em;
+    border-radius: 1.2em;
+}
+
+ol.navbarProgress li.navbarProgress-doing:hover:before {
+    color: #0FA0CE;
+}
+
+ol.navbarProgress li.navbarProgress-done:before {
+    content: "\2713";
+    color: white;
+    background-color: #33C3F0;
+    width: 1.2em;
+    line-height: 1.2em;
+    border-radius: 1.2em;
+}
+
+ol.navbarProgress li.navbarProgress-done:hover:before {
+    color: #0FA0CE;
+}
+
+
+ol.navbarProgress li.navbarProgress-error:before {
+    content: "\00D7";
+    color: white;
+    background-color: #0FA0CE;
+    width: 1.2em;
+    line-height: 1.2em;
+    border-radius: 1.2em;
+}
+
+ol.navbarProgress li.navbarProgress-error:hover:before {
+    color: #0FA0CE;
+}
